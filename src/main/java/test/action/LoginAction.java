@@ -21,9 +21,9 @@ public class LoginAction {
 		user.setPassword(request.getParameter("password"));
 		boolean result = loginservice.checkLogin(user);
 		if(result) {
-			return "success";
+			return "success.jsp";
 		}
-			return "error";
+			return "error.html";
 	}
 	
 	public LoginService getLoginservice() {
