@@ -23,7 +23,7 @@ public class LoginAction {
 		if(result) {
 			return "success.jsp";
 		}
-			return "error.html";
+			return "ok";
 	}
 	
 	public LoginService getLoginservice() {
